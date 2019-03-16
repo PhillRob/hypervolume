@@ -9,7 +9,7 @@ Constructs a hypervolume by building a Gaussian kernel density estimate on an ad
 
 Because Gaussian kernel density estimates do not decay to zero in a finite distance, the algorithm evaluates the kernel density in hyperelliptical regions out to a distance set by \code{sd.count}. 
 
-After delineating the probability density, the function calls \code{\link{hypervolume_threshold}} to determine a boundary. The defaullt behavior ensures that 95 percent of the stimated probability density is enclosed by the chosen boundary. However note that theaccuracy of the total probability density depends on having set a large value of \code{sd.count}.
+After delineating the probability density, the function calls \code{\link{hypervolume_threshold}} to determine a boundary. The defaullt behavior ensures that 95 percent of the estimated probability density is enclosed by the chosen boundary. However note that the accuracy of the total probability density depends on having set a large value of \code{sd.count}.
 
 Most use cases should not require modification of any parameters except \code{kde.bandwidth}. 
 
